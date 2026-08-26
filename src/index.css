@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans-flex: 'Google Sans Flex', sans-serif;
+}
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html::-webkit-scrollbar {
+  display: none;
+}
