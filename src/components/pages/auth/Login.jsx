@@ -204,7 +204,7 @@ const Login = () => {
               type="button"
               onClick={() => {
                 window.location.href =
-                  "https://smart-expense-tracker-frontend-five.vercel.app/oauth2/authorization/google";
+                  import.meta.env.OAUTH2_REDIRECT_URL;
               }}
               className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 mt-3 rounded-lg hover:bg-gray-50 transition"
             >
