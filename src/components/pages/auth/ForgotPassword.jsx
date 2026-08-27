@@ -64,7 +64,7 @@ const ForgotPassword = () => {
         {/* Header */}
         <div className="text-center mb-8">
 
-          <h1 className="text-3xl font-bold text-blue-600">
+          <h1 className="text-3xl font-bold text-violet-700">
             Smart Expense Tracker
           </h1>
 
