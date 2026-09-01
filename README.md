@@ -6,19 +6,16 @@ Smart Expense Tracker allows users to manage their income, expenses, budgets and
 
 The frontend communicates with a secure Spring Boot REST API for authentication, financial data management and analytics.
 
----
 
 ## 🚀 Live Application
 
-🔗 Live Demo: YOUR_FRONTEND_URL
+🔗 Live Demo: https://smart-expense-tracker-frontend-5z24.vercel.app/login
 
-🔗 Backend Repository: YOUR_BACKEND_REPOSITORY_URL
+🔗 Backend Repository: https://github.com/aayush240805/smart-expense-tracker-backend
 
----
+✨ Features
 
-## ✨ Features
-
-### 🔐 Authentication
+🔐 Authentication
 
 - User login and registration
 - JWT-based authentication
@@ -27,37 +24,7 @@ The frontend communicates with a secure Spring Boot REST API for authentication,
 - Automatic authentication handling
 - Logout functionality
 
-### 💸 Expense Management
-
-- Add expenses
-- Edit expenses
-- View expense details
-- Delete expenses
-- Search expenses
-- Filter by category
-- Filter by payment method
-- Filter by date range
-- Pagination
-
-### 💰 Income Management
-
-- Add income
-- Edit income
-- View income details
-- Delete income
-- Search and filter income
-- Pagination
-
-### 🎯 Budget Management
-
-- Create monthly budgets
-- Category-based budgets
-- View budget limits
-- Track spending
-- View remaining budget
-- Monitor budget utilization
-
-### 📊 Dashboard
+📊 Dashboard
 
 The dashboard provides a quick overview of the user's finances:
 
@@ -69,6 +36,36 @@ The dashboard provides a quick overview of the user's finances:
 - Expense category distribution
 - Recent transactions
 - Quick actions
+
+💸 Expense Management
+
+- Add expenses
+- Edit expenses
+- View expense details
+- Delete expenses
+- Search expenses
+- Filter by category
+- Filter by payment method
+- Filter by date range
+- Pagination
+
+💰 Income Management
+
+- Add income
+- Edit income
+- View income details
+- Delete income
+- Search and filter income
+- Pagination
+
+🎯 Budget Management
+
+- Create monthly budgets
+- Category-based budgets
+- View budget limits
+- Track spending
+- View remaining budget
+- Monitor budget utilization
 
 ### 📈 Financial Reports
 
@@ -86,7 +83,7 @@ The dashboard provides a quick overview of the user's finances:
 - Password validation
 - Password change notification
 
-### 📱 Responsive Design
+📱 Responsive Design
 
 The application is designed to work across:
 
@@ -97,11 +94,12 @@ The application is designed to work across:
 
 The sidebar and dashboard layout automatically adapt to different screen sizes.
 
----
+🌙 Dark Mode
 
-## 🛠️ Tech Stack
 
-### Frontend
+🛠️ Tech Stack
+
+Frontend
 
 - React.js
 - JavaScript
@@ -113,48 +111,117 @@ The sidebar and dashboard layout automatically adapt to different screen sizes.
 - Lucide React
 - React Icons
 
-### Backend Integration
+Backend Integration
 
 - REST APIs
 - JWT Authentication
 - Google OAuth 2.0
 - JSON-based API communication
 
----
 
-## 📂 Project Structure
+📂 Project Structure
 
-```text
-src/
+smart-expense-tracker-frontend/
 │
-├── assets/
+├── public/
+│   ├── favicon.svg
+│   └── icons.svg
 │
-├── components/
-│   ├── common/
-│   └── UI/
+├── src/
+│   │
+│   ├── api/
+│   │   └── axios.js
+│   │
+│   ├── assets/
+│   │   └── logo.png
+│   │
+│   ├── components/
+│   │   │
+│   │   ├── layout/
+│   │   │   ├── Layout.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Sidebar.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   │
+│   │   │   ├── auth/
+│   │   │   │   ├── Login.jsx
+│   │   │   │   ├── Register.jsx
+│   │   │   │   ├── ForgotPassword.jsx
+│   │   │   │   ├── ResetPassword.jsx
+│   │   │   │   └── OAuth2Redirect.jsx
+│   │   │   │
+│   │   │   ├── dashboard/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── DashboardHeader.jsx
+│   │   │   │   ├── SummaryCards.jsx
+│   │   │   │   ├── SummaryCard.jsx
+│   │   │   │   ├── QuickActions.jsx
+│   │   │   │   ├── RecentTransactions.jsx
+│   │   │   │   ├── TransactionTable.jsx
+│   │   │   │   ├── IncomeExpenseChart.jsx
+│   │   │   │   └── ExpenseCategoryChart.jsx
+│   │   │   │
+│   │   │   ├── expense/
+│   │   │   │   ├── Expense.jsx
+│   │   │   │   ├── ExpenseList.jsx
+│   │   │   │   ├── AddExpense.jsx
+│   │   │   │   └── ViewExpense.jsx
+│   │   │   │
+│   │   │   ├── income/
+│   │   │   │   ├── Income.jsx
+│   │   │   │   ├── IncomeList.jsx
+│   │   │   │   ├── AddIncome.jsx
+│   │   │   │   └── ViewIncome.jsx
+│   │   │   │
+│   │   │   ├── budget/
+│   │   │   │   ├── Budget.jsx
+│   │   │   │   ├── BudgetList.jsx
+│   │   │   │   ├── AddBudget.jsx
+│   │   │   │   └── ViewBudget.jsx
+│   │   │   │
+│   │   │   ├── profile/
+│   │   │   │   └── Profile.jsx
+│   │   │   │
+│   │   │   ├── report/
+│   │   │   │   └── Reports.jsx
+│   │   │   │
+│   │   │   └── NotFound.jsx
+│   │   │
+│   │   └── reuseable components/
+│   │       ├── ConfirmModal.jsx
+│   │       ├── ErrorSuccessBox.jsx
+│   │       └── PageHeader.jsx
+│   │
+│   ├── context/
+│   │   ├── AuthProvider.jsx
+│   │   └── ThemeProvider.jsx
+│   │
+│   ├── routes/
+│   │   ├── AppRoutes.jsx
+│   │   ├── ProtectedRoute.jsx
+│   │   └── PublicRoute.jsx
+│   │
+│   ├── services/
+│   │   ├── authService.js
+│   │   ├── expenseService.js
+│   │   ├── incomeService.js
+│   │   ├── budgetService.js
+│   │   ├── categoryService.js
+│   │   ├── dashboardService.js
+│   │   ├── profileService.js
+│   │   ├── reportService.js
+│   │   └── tokenValidate.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
 │
-├── context/
-│   └── AuthProvider.jsx
-│
-├── pages/
-│   ├── auth/
-│   ├── dashboard/
-│   ├── expenses/
-│   ├── incomes/
-│   ├── budgets/
-│   ├── reports/
-│   └── profile/
-│
-├── services/
-│   ├── authService.js
-│   ├── dashboardService.js
-│   ├── expenseService.js
-│   ├── incomeService.js
-│   ├── budgetService.js
-│   ├── reportService.js
-│   ├── profileService.js
-│   └── categoryService.js
-│
-├── App.jsx
-├── main.jsx
-└── index.css
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── vercel.json
+└── README.md
