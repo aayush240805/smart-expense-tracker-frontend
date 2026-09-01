@@ -13,9 +13,9 @@ The frontend communicates with a secure Spring Boot REST API for authentication,
 
 🔗 Backend Repository: https://github.com/aayush240805/smart-expense-tracker-backend
 
-✨ Features
+## ✨ Features
 
-🔐 Authentication
+### 🔐 Authentication
 
 - User login and registration
 - JWT-based authentication
@@ -24,7 +24,7 @@ The frontend communicates with a secure Spring Boot REST API for authentication,
 - Automatic authentication handling
 - Logout functionality
 
-📊 Dashboard
+### 📊 Dashboard
 
 The dashboard provides a quick overview of the user's finances:
 
@@ -37,7 +37,7 @@ The dashboard provides a quick overview of the user's finances:
 - Recent transactions
 - Quick actions
 
-💸 Expense Management
+### 💸 Expense Management
 
 - Add expenses
 - Edit expenses
@@ -49,7 +49,7 @@ The dashboard provides a quick overview of the user's finances:
 - Filter by date range
 - Pagination
 
-💰 Income Management
+### 💰 Income Management
 
 - Add income
 - Edit income
@@ -58,7 +58,7 @@ The dashboard provides a quick overview of the user's finances:
 - Search and filter income
 - Pagination
 
-🎯 Budget Management
+### 🎯 Budget Management
 
 - Create monthly budgets
 - Category-based budgets
@@ -83,7 +83,7 @@ The dashboard provides a quick overview of the user's finances:
 - Password validation
 - Password change notification
 
-📱 Responsive Design
+### 📱 Responsive Design
 
 The application is designed to work across:
 
@@ -92,14 +92,14 @@ The application is designed to work across:
 - Tablet
 - Mobile
 
-The sidebar and dashboard layout automatically adapt to different screen sizes.
+ The sidebar and dashboard layout automatically adapt to different screen sizes.
 
-🌙 Dark Mode
+### 🌙 Dark Mode
 
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-Frontend
+### Frontend
 
 - React.js
 - JavaScript
@@ -111,7 +111,7 @@ Frontend
 - Lucide React
 - React Icons
 
-Backend Integration
+### Backend Integration
 
 - REST APIs
 - JWT Authentication
@@ -119,8 +119,9 @@ Backend Integration
 - JSON-based API communication
 
 
-📂 Project Structure
+## 📂 Project Structure
 
+### 
 smart-expense-tracker-frontend/
 │
 ├── public/
