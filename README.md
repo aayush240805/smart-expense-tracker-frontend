@@ -13,6 +13,7 @@ The frontend communicates with a secure Spring Boot REST API for authentication,
 
 🔗 Backend Repository: https://github.com/aayush240805/smart-expense-tracker-backend
 
+
 ## ✨ Features
 
 ### 🔐 Authentication
@@ -95,6 +96,7 @@ The application is designed to work across:
  The sidebar and dashboard layout automatically adapt to different screen sizes.
 
 ### 🌙 Dark Mode
+Theme can be toggle 
 
 
 ## 🛠️ Tech Stack
