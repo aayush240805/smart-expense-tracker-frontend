@@ -123,7 +123,6 @@ Theme can be toggle
 
 ## 📂 Project Structure
 
-### 
 smart-expense-tracker-frontend/
 │
 ├── public/
@@ -228,3 +227,5 @@ smart-expense-tracker-frontend/
 ├── vite.config.js
 ├── vercel.json
 └── README.md
+
+
